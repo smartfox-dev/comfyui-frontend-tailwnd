@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  /* max-width: 1172px */
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+
+.ck.ck-editor {
+  width: 100%!important;
+  min-width: 300px;
+}
+
+.ck h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ck h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.ck h4 {
+  font-weight: bold;
+}
+
+.ck.ck-balloon-panel_visible.ck-powered-by-balloon {
+  display: none!important;
+}
+
+.ck.ck-dropdown__panel-visible {
+  z-index: 100;
+}
+
+.ck.ck-content {
+  min-height: 300px;
+}
+
+.typing {
+  align-items: center;
+  display: flex;
+  height: 17px;
+}
+
+.typing .dot {
+  animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+  background-color: #737373;
+  border-radius: 50%;
+  height: 9px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 9px;
+  display: inline-block;
+}
+
+.typing .dot:last-child {
+  margin-right: 0;
+}
+
+.typing .dot:nth-child(1) {
+  animation-delay: 200ms;
+}
+
+.typing .dot:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.typing .dot:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+.typing .dot:last-child {
+  margin-right: 0;
+}
